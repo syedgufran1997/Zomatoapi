@@ -1,0 +1,52 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans SC", sans-serif;
+}
+.input {
+  text-align: center;
+  color: white;
+  padding-top: 20vh;
+  height: 90vh;
+  width: 100vw;
+  background: linear-gradient(
+      60deg,
+      rgba(12, 19, 31, 0.479) 0%,
+      rgba(11, 16, 61, 0.486) 98%
+    ),
+    url("./shared/Imgaes/zomato.jpg") no-repeat center;
+  background-size: cover;
+}
+.input h1 {
+  font-size: 4rem;
+  font-family: "Calistoga", cursive;
+  font-family: "Noto Sans SC", sans-serif;
+}
+.input h3 {
+  letter-spacing: 1.2px;
+  font-size: 1.5rem;
+  margin: 1rem auto;
+  width: 80%;
+}
+.searchlabel input {
+  margin: 1rem auto;
+  padding: 15px 10px;
+  width: 60%;
+  max-width: 410px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+.searchlabel input:hover {
+  border: 1px solid tomato;
+}
+.searchicon {
+  margin-left: -9px;
+  vertical-align: middle;
+  background: linear-gradient(60deg, rgb(252, 114, 114) 0%, rgb(245, 5, 5) 98%);
+  padding: 15px 20px;
+  border-radius: 0 8px 8px 0;
+}
