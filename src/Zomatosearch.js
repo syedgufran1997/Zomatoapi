@@ -38,10 +38,8 @@ class Zomatosearch extends Component {
     )
       .then((res) => res.json())
       .then((data) =>
-        this.setState(
-          { searchResult: data.restaurants, reviews: [] },
-          () => console.log(this.state.searchResult),
-          document.write(this.state.searchResult)
+        this.setState({ searchResult: data.restaurants, reviews: [] }, () =>
+          console.log(this.state.searchResult)
         )
       )
       .catch((err) => console.log(err));
@@ -78,6 +76,7 @@ class Zomatosearch extends Component {
         {this.state.searchResult.length &&
           this.state.searchResult.map(({ restaurant }) => (
             <div
+              className={zomatosearch.restaurants}
               onClick={() => this.getReview(restaurant.id)}
               key={restaurant.id}
             >
@@ -88,9 +87,11 @@ class Zomatosearch extends Component {
           this.state.reviews.map(({ review }) => {
             return (
               <div className={zomatosearch.reviews}>
-                <h2>Review - {review.review_text + review.rating_text}</h2>
-                <h3>Rating -{review.rating}</h3>
-                <h4>User - {review.user.name}</h4>
+                <div className={zomatosearch.rating}>
+                  <h4>User - {review.user.name}</h4>
+                  <h4>Rating -{review.rating}</h4>
+                </div>
+                <p>Review - {review.review_text + review.rating_text}</p>
               </div>
             );
           })}

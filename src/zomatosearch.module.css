@@ -5,6 +5,7 @@
 }
 body {
   font-family: "Noto Sans SC", sans-serif;
+  background-color: slategrey;
 }
 .input {
   text-align: center;
@@ -52,11 +53,35 @@ body {
   background: linear-gradient(60deg, rgb(252, 114, 114) 0%, rgb(245, 5, 5) 98%);
   border-radius: 0 10px 10px 0;
 }
-.reviews {
+.restaurants {
   background-color: white;
+  color: black;
+  margin: 10px auto;
+  width: 70%;
+  border-right: 10px solid #ff2400;
+  border-radius: 10px;
+  padding: 10px 15px;
+  box-shadow: 0 1.5px 2.9px 3px black;
 }
-.reviews h2 {
+.restaurants:hover {
+  box-shadow: none;
+}
+.reviews {
+  margin: 10px auto;
+  padding: 10px 15px;
+  width: 70%;
+  border-radius: 10px;
   background-color: white;
+  color: black;
+  border-right: 10px solid #ff2400;
+}
+.reviews h3 {
+  background-color: white;
+  color: black;
+}
+.rating {
+  display: flex;
+  justify-content: space-between;
 }
 @media screen and (min-width: 700px) {
   .searchlabel input {
