@@ -32,7 +32,7 @@ class Zomatosearch extends Component {
     `,
       {
         headers: {
-          "user-key": "8fa87ac61412b80b53536a2aa6e45648",
+          "user-key": "c8f7112c308ba9ff0ce93b0dc1ae127e",
         },
       }
     )
