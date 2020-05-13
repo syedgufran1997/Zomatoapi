@@ -88,8 +88,8 @@ class Zomatosearch extends Component {
             return (
               <div className={zomatosearch.reviews}>
                 <div className={zomatosearch.rating}>
-                  <h4>User - {review.user.name}</h4>
-                  <h4>Rating -{review.rating}</h4>
+                  <h3>User - {review.user.name}</h3>
+                  <h3>Rating -{review.rating}</h3>
                 </div>
                 <p>Review - {review.review_text + review.rating_text}</p>
               </div>
