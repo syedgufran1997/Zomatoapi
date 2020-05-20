@@ -34,7 +34,7 @@ class Zomatosearch extends Component {
         headers: {
           "user-key": "c8f7112c308ba9ff0ce93b0dc1ae127e",
         },
-      }
+      }  
     )
       .then((res) => res.json())
       .then((data) =>
@@ -57,7 +57,7 @@ class Zomatosearch extends Component {
           console.log(this.state.reviews)
         )
       )
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err));   
   };
 
   render() {
